@@ -1,0 +1,345 @@
+fileFormatVersion: 2
+guid: 79aa2b7f181914647a508fa2fbd650d5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Contact_List 1_17
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 383
+        width: 559
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcbaa5c899cd9a8498c584529a789aae
+      internalID: 1141121740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contact_List 1_19
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 277
+        width: 82
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956b2f1b0a88da74b8337ee219b1e9da
+      internalID: -1469621261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contact_List 1_20
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 274
+        width: 84
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf8e9fadfab5ed4eb04c6ab5502220b
+      internalID: -1213416583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contact_List 1_21
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 162
+        width: 82
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e99ad77501b6948a1b9be3d01cfcf3
+      internalID: -1263629539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contact_List 1_23
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 163
+        width: 86
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e984208bf3aff5b4b8a9376a266c2311
+      internalID: 1197285492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contact_List 1_31
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 54
+        width: 90
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9fbed9b88d49854b95acd0aa19dba59
+      internalID: 181460307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contact_List 1_32
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 48
+        width: 85
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39bf545646433654fa4f1f3653b874a7
+      internalID: -1437732275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Contact_List 1_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 490
+        width: 560
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d523aaba46d8e514c9ca4fc0750d3d85
+      internalID: 958102198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Contact_List 1_41: 1409435473
+      Contact_List 1_14: 61531020
+      Contact_List 1_18: 1131985692
+      Contact_List 1_34: -432918103
+      Contact_List 1_21: -1263629539
+      Contact_List 1_37: 983057648
+      Contact_List 1_2: -1494361158
+      Contact_List 1_27: -2043578319
+      Contact_List 1_6: -1751365002
+      Contact_List 1_30: 123671962
+      Contact_List 1_24: -781126613
+      Contact_List 1_32: -1437732275
+      Contact_List 1_4: 958065795
+      Contact_List 1_13: -1131527155
+      Contact_List 1_15: -590358998
+      Contact_List 1_16: 759191383
+      Contact_List 1_19: -1469621261
+      Contact_List 1_20: -1213416583
+      Contact_List 1_40: 1879884679
+      Contact_List 1_7: 1339524317
+      Contact_List 1_8: 1953537859
+      Contact_List 1_11: -1058348072
+      Contact_List 1_1: 812301690
+      Contact_List 1_10: -890065886
+      Contact_List 1_31: 181460307
+      Contact_List 1_17: 1141121740
+      Contact_List 1_9: -1341507135
+      Contact_List 1_26: -1559097383
+      Contact_List 1_23: 1197285492
+      Contact_List 1_22: -1798913440
+      Contact_List 1_33: 1466810698
+      Contact_List 1_29: -135332755
+      Contact_List 1_36: 1443173767
+      Contact_List 1_35: -1647212217
+      Contact_List 1_0: 958102198
+      Contact_List 1_25: -53244564
+      Contact_List 1_28: 304781829
+      Contact_List 1_38: -1612261639
+      Contact_List 1_39: 1393696202
+      Contact_List 1_3: 337709915
+      Contact_List 1_5: 1086197823
+      Contact_List 1_12: -406579292
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
