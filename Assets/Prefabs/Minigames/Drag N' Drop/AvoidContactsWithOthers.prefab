@@ -311,6 +311,10 @@ PrefabInstance:
       propertyPath: idleAnim
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3632875013384180755, guid: 49baaff46fdeacc4e80acf2b461be233, type: 3}
+      propertyPath: _lockVerticalMove
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3632875013384180758, guid: 49baaff46fdeacc4e80acf2b461be233, type: 3}
       propertyPath: m_Size.x
       value: 0.5
@@ -407,6 +411,18 @@ PrefabInstance:
       propertyPath: _minigameObjectsAnim
       value: 
       objectReference: {fileID: 2876125927882580835}
+    - target: {fileID: 4941278223229057833, guid: 49baaff46fdeacc4e80acf2b461be233, type: 3}
+      propertyPath: _timelineEnds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4941278223229057833, guid: 49baaff46fdeacc4e80acf2b461be233, type: 3}
+      propertyPath: _timelineEnds.Array.data[0]
+      value: 
+      objectReference: {fileID: 2245761869276727597}
+    - target: {fileID: 4941278223229057833, guid: 49baaff46fdeacc4e80acf2b461be233, type: 3}
+      propertyPath: _timelineEnds.Array.data[1]
+      value: 
+      objectReference: {fileID: 2245761869276727597}
     - target: {fileID: 4941278223229057833, guid: 49baaff46fdeacc4e80acf2b461be233, type: 3}
       propertyPath: _interactionPoints.Array.size
       value: 2
@@ -505,6 +521,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49baaff46fdeacc4e80acf2b461be233, type: 3}
+--- !u!320 &2245761869276727597 stripped
+PlayableDirector:
+  m_CorrespondingSourceObject: {fileID: 1600174386851992278, guid: 49baaff46fdeacc4e80acf2b461be233, type: 3}
+  m_PrefabInstance: {fileID: 657097448868977659}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &2876125927882580835 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3383461088210057368, guid: 49baaff46fdeacc4e80acf2b461be233, type: 3}

@@ -367,7 +367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4941278223229057833, guid: 49baaff46fdeacc4e80acf2b461be233, type: 3}
       propertyPath: _duration
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4941278223229057833, guid: 49baaff46fdeacc4e80acf2b461be233, type: 3}
       propertyPath: timeOutPoint

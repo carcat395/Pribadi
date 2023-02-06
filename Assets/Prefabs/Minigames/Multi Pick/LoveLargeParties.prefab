@@ -5746,7 +5746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 644578136442825193, guid: 4d8ff0622f5a1234a9186b4879362848, type: 3}
       propertyPath: _duration
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 644578136442825193, guid: 4d8ff0622f5a1234a9186b4879362848, type: 3}
       propertyPath: _timeOutPoint
@@ -5756,6 +5756,18 @@ PrefabInstance:
       propertyPath: _toggleParent
       value: 
       objectReference: {fileID: 2803011793588952336}
+    - target: {fileID: 644578136442825193, guid: 4d8ff0622f5a1234a9186b4879362848, type: 3}
+      propertyPath: _timelineEnds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 644578136442825193, guid: 4d8ff0622f5a1234a9186b4879362848, type: 3}
+      propertyPath: _timelineEnds.Array.data[0]
+      value: 
+      objectReference: {fileID: 3453192772679864734}
+    - target: {fileID: 644578136442825193, guid: 4d8ff0622f5a1234a9186b4879362848, type: 3}
+      propertyPath: _timelineEnds.Array.data[1]
+      value: 
+      objectReference: {fileID: 3453192772679864734}
     - target: {fileID: 644578136442825199, guid: 4d8ff0622f5a1234a9186b4879362848, type: 3}
       propertyPath: m_Name
       value: LoveLargeParties
@@ -5844,6 +5856,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.7956
       objectReference: {fileID: 0}
+    - target: {fileID: 7859556835798411731, guid: 4d8ff0622f5a1234a9186b4879362848, type: 3}
+      propertyPath: m_PlayableAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 0d24c76b02c1c8646aefbf60b5b3a7e3, type: 2}
+    - target: {fileID: 7859556835798411731, guid: 4d8ff0622f5a1234a9186b4879362848, type: 3}
+      propertyPath: m_SceneBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7859556835798411731, guid: 4d8ff0622f5a1234a9186b4879362848, type: 3}
+      propertyPath: m_SceneBindings.Array.data[0].key
+      value: 
+      objectReference: {fileID: 8694765422469088532, guid: 0d24c76b02c1c8646aefbf60b5b3a7e3, type: 2}
     - target: {fileID: 8414805541515689116, guid: 4d8ff0622f5a1234a9186b4879362848, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -5895,3 +5919,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!320 &3453192772679864734 stripped
+PlayableDirector:
+  m_CorrespondingSourceObject: {fileID: 7859556835798411731, guid: 4d8ff0622f5a1234a9186b4879362848, type: 3}
+  m_PrefabInstance: {fileID: 4827566102903421005}
+  m_PrefabAsset: {fileID: 0}

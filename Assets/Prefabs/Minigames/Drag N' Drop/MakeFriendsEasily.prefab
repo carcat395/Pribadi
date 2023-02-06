@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: hello!
+  m_text: Halo !
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: hello!
+  m_text: Halo !
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -650,7 +650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1105865324958322363, guid: 49baaff46fdeacc4e80acf2b461be233, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.17
+      value: 0.547
       objectReference: {fileID: 0}
     - target: {fileID: 1105865324958322363, guid: 49baaff46fdeacc4e80acf2b461be233, type: 3}
       propertyPath: m_LocalPosition.y
@@ -902,6 +902,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3632875013384180753, guid: 49baaff46fdeacc4e80acf2b461be233, type: 3}
       propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3632875013384180755, guid: 49baaff46fdeacc4e80acf2b461be233, type: 3}
+      propertyPath: idleAnim
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3632875013384180755, guid: 49baaff46fdeacc4e80acf2b461be233, type: 3}

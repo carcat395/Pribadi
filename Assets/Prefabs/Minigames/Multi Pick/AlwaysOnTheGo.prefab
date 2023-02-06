@@ -8763,6 +8763,22 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[1].value
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3789699975436127406, guid: 4d8ff0622f5a1234a9186b4879362848, type: 3}
+      propertyPath: m_PlayableAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a77516216bcd0eb469e26224fad4c37c, type: 2}
+    - target: {fileID: 3789699975436127406, guid: 4d8ff0622f5a1234a9186b4879362848, type: 3}
+      propertyPath: m_SceneBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3789699975436127406, guid: 4d8ff0622f5a1234a9186b4879362848, type: 3}
+      propertyPath: m_SceneBindings.Array.data[0].key
+      value: 
+      objectReference: {fileID: -8099702237554970384, guid: abf7175055dcdac40a1aa2cff96b1c63, type: 2}
+    - target: {fileID: 3789699975436127406, guid: 4d8ff0622f5a1234a9186b4879362848, type: 3}
+      propertyPath: m_SceneBindings.Array.data[1].key
+      value: 
+      objectReference: {fileID: -2893386124113407933, guid: abf7175055dcdac40a1aa2cff96b1c63, type: 2}
     - target: {fileID: 4362144870945285306, guid: 4d8ff0622f5a1234a9186b4879362848, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
