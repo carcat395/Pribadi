@@ -318,7 +318,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 92cf1c7175155324aa9eb5effe38eec6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -398,6 +398,7 @@ MonoBehaviour:
   - {fileID: 8823670010112153152, guid: fd5bec3e4c49761488299f433c6143e0, type: 3}
   - {fileID: 7740507251406609944, guid: 6bc5097b008be074e81006d9eba33ff5, type: 3}
   - {fileID: 1188251884571932948, guid: bbdaed7774df2b247bff3c4c64d66678, type: 3}
+  - {fileID: 2488546604992384466, guid: b96faa3ed7a34eb4e92b7af9d93bc64b, type: 3}
   conventionalTestItems:
   - {fileID: 6651446523103781320, guid: 3f4d5493a43d8ad4e8b45c89d4fcd81f, type: 3}
   - {fileID: 3389986329664426841, guid: 0765469f5bd8887418639b9047314f8a, type: 3}
@@ -452,6 +453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e2e1b802d9db87469532b6a9b2c2073, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isConventionalTest: 0
 --- !u!1 &100641349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,7 +1256,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &466145074
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3425,7 +3427,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: ce2de89cf6669fe4a85bdb252bd2188b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e99fbc76f78333c428ddc91a592d7eff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

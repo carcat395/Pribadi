@@ -13,6 +13,8 @@ public class FirestoreManager : MonoBehaviour
     private int globalResultCount;
     private double[] averageScores = new double[7];
 
+    [SerializeField] bool isConventionalTest;
+
     private void Start()
     {
         GameManager gm = GameManager.instance;
@@ -85,8 +87,8 @@ public class FirestoreManager : MonoBehaviour
             {StringRef.CHEERFULNESS, scores[6]},
             {StringRef.ITEM_RESULTS, itemResults}
         };
-
         newResultDocRef.SetAsync(newResult);
+
 
         Dictionary<string, object> updateMaster = new Dictionary<string, object>
         {
@@ -99,8 +101,9 @@ public class FirestoreManager : MonoBehaviour
             {StringRef.EXCITEMENT_SEEKING_AVERAGE, AddAverage(averageScores[5], scores[5])},
             {StringRef.CHEERFULNESS_AVERAGE, AddAverage(averageScores[6], scores[6])}
         };
-
         masterDocRef.SetAsync(updateMaster);
+
+        GameManager.instance.onFinishUpload?.Invoke();
     }
 
     public void UploadConventionalTestResult(int[] scores, Dictionary<string, int> itemResults)
@@ -119,6 +122,7 @@ public class FirestoreManager : MonoBehaviour
         };
 
         newResultDocRef.SetAsync(newResult);
+        GameManager.instance.onFinishUpload?.Invoke();
     }
 
     private double AddAverage(double averageValue, int newValue)

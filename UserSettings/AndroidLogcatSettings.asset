@@ -1,13 +1,44 @@
 {
-    "m_SelectedDeviceId": "",
+    "m_SelectedDeviceId": "741d6a5b",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "741d6a5b",
+        "name": "com.pribaditeam.pribadi",
+        "processId": 4353,
         "exited": false
     },
     "m_SelectedPriority": 0,
-    "m_KnownPackagesForSerialization": [],
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "741d6a5b",
+            "name": "com.teslacoilsw.launcher",
+            "processId": 30146,
+            "exited": false
+        },
+        {
+            "deviceId": "741d6a5b",
+            "name": "com.pribaditeam.pribadi",
+            "processId": 28235,
+            "exited": true
+        },
+        {
+            "deviceId": "741d6a5b",
+            "name": "com.pribaditeam.pribadi",
+            "processId": 31470,
+            "exited": false
+        },
+        {
+            "deviceId": "741d6a5b",
+            "name": "com.pribaditeam.pribadi",
+            "processId": 3050,
+            "exited": false
+        },
+        {
+            "deviceId": "741d6a5b",
+            "name": "com.pribaditeam.pribadi",
+            "processId": 4353,
+            "exited": false
+        }
+    ],
     "m_Tags": {
         "m_Entries": [
             {
@@ -16,7 +47,7 @@
             },
             {
                 "m_Name": "No Filter",
-                "m_Selected": true
+                "m_Selected": false
             },
             {
                 "m_Name": "",
@@ -32,7 +63,7 @@
             },
             {
                 "m_Name": "Unity",
-                "m_Selected": false
+                "m_Selected": true
             },
             {
                 "m_Name": "CRASH",
@@ -41,9 +72,20 @@
         ]
     },
     "m_MemoryViewerState": {
-        "MemoryWindowHeight": 0.0,
-        "MemoryWindowWidth": 0.0,
-        "MemoryTypeEnabled": [],
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
         "MemoryGroup": 2,
         "Behavior": 0
     },

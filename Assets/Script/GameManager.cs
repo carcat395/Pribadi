@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour
     public Action onFinishLoad;
     public Action onStartGame;
     public Action onQuitCurrentGame;
+    public Action onFinishUpload;
     public Action<int[], Dictionary<string, int>> onShowResult;
 
     //transition
@@ -74,6 +75,7 @@ public class GameManager : MonoBehaviour
                 onFinishStartup?.Invoke();
             }
         };
+        onFinishUpload += resetIndividualResult;
         LoadProgress();
     }
 
@@ -172,7 +174,6 @@ public class GameManager : MonoBehaviour
 
     private void FinishMinigame(BaseMinigame miniGame)
     {
-        Debug.Log("??????????????????");
         _itemResults.Add(miniGame.gameObject.name, miniGame.point);
         switch(miniGame.type)
         {
@@ -220,8 +221,8 @@ public class GameManager : MonoBehaviour
             _scores[1], _scores[2], _scores[3], _scores[4], _scores[5], _scores[6], 
             (_scores[1] + _scores[2] + _scores[3] + _scores[4] + _scores[5] + _scores[6]));
         _scores[0] = _scores[1] + _scores[2] + _scores[3] + _scores[4] + _scores[5] + _scores[6];
-        onShowResult.Invoke(_scores, _itemResults);
         _resultScreen.SetActive(true);
+        onShowResult.Invoke(_scores, _itemResults);
 
         onStartTransition.Invoke(true, fadeDuration);
     }
@@ -363,6 +364,16 @@ public class GameManager : MonoBehaviour
         userID = null;
 
         onResetData?.Invoke();
+    }
+    
+    public void resetIndividualResult()
+    {
+        foreach(KeyValuePair<string, int> keyValuePair in _itemResults)
+        {
+            PlayerPrefs.DeleteKey(keyValuePair.Key);
+        }
+
+        _itemResults.Clear();
     }
 
     public void DebugProgress()
