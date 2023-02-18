@@ -10,11 +10,13 @@ public class MainMenu : MonoBehaviour
     {
         GameManager gm = GameManager.instance;
         _view = GetComponent<MainMenuView>();
+
         _view.newGameButton.onClick.AddListener(() => 
         {
             gm.gameMode = GameManager.GameMode.defaultGame;
             gm.StartGame(true);
         });
+        
         _view.startConvetionalTestButton.onClick.AddListener(() => 
         {
             gm.gameMode = GameManager.GameMode.conventionalTest;
