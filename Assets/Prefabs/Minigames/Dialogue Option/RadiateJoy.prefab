@@ -1449,7 +1449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3018138356365578016, guid: a1f4653602bc51f4eba2d1326001db4f, type: 3}
       propertyPath: _duration
-      value: 5
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 3018138356365578016, guid: a1f4653602bc51f4eba2d1326001db4f, type: 3}
       propertyPath: _timeOutPoint
@@ -1513,16 +1513,16 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 60705bfcb51a3a746af6d44056ca6267, type: 2}
     - target: {fileID: 5890270033230985341, guid: a1f4653602bc51f4eba2d1326001db4f, type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5890270033230985341, guid: a1f4653602bc51f4eba2d1326001db4f, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].key
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6815744920728931588, guid: 60705bfcb51a3a746af6d44056ca6267, type: 2}
     - target: {fileID: 5890270033230985341, guid: a1f4653602bc51f4eba2d1326001db4f, type: 3}
       propertyPath: m_SceneBindings.Array.data[1].key
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2621936095437478708, guid: 60705bfcb51a3a746af6d44056ca6267, type: 2}
     - target: {fileID: 5890270033230985341, guid: a1f4653602bc51f4eba2d1326001db4f, type: 3}
       propertyPath: m_SceneBindings.Array.data[2].key
       value: 
@@ -1530,11 +1530,11 @@ PrefabInstance:
     - target: {fileID: 5890270033230985341, guid: a1f4653602bc51f4eba2d1326001db4f, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].value
       value: 
-      objectReference: {fileID: 8967870303467460556}
+      objectReference: {fileID: 762007197757284978}
     - target: {fileID: 5890270033230985341, guid: a1f4653602bc51f4eba2d1326001db4f, type: 3}
       propertyPath: m_SceneBindings.Array.data[1].value
       value: 
-      objectReference: {fileID: 1358667576210380925}
+      objectReference: {fileID: 7505029170138847616}
     - target: {fileID: 6546343381113762869, guid: a1f4653602bc51f4eba2d1326001db4f, type: 3}
       propertyPath: m_RootOrder
       value: 1

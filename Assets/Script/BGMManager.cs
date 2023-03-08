@@ -34,7 +34,7 @@ public class BGMManager : MonoBehaviour
         if(mute)
             audioSource.volume = 0;
         else
-            audioSource.volume = 0.5f;
+            audioSource.volume = 1f;
     }
 
     private void SwitchBGM(int index)

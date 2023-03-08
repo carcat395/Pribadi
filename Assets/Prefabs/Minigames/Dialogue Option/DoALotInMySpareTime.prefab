@@ -1081,6 +1081,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3018138356365578016, guid: a1f4653602bc51f4eba2d1326001db4f, type: 3}
+      propertyPath: _dialogueOptions.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3018138356365578016, guid: a1f4653602bc51f4eba2d1326001db4f, type: 3}
       propertyPath: _timelineEnds.Array.data[0]
       value: 
       objectReference: {fileID: 9164164645086655797}
@@ -1088,6 +1092,14 @@ PrefabInstance:
       propertyPath: _timelineEnds.Array.data[1]
       value: 
       objectReference: {fileID: 9164164645086655797}
+    - target: {fileID: 3018138356365578016, guid: a1f4653602bc51f4eba2d1326001db4f, type: 3}
+      propertyPath: _dialogueOptions.Array.data[0]
+      value: 
+      objectReference: {fileID: 3864316919315787350}
+    - target: {fileID: 3018138356365578016, guid: a1f4653602bc51f4eba2d1326001db4f, type: 3}
+      propertyPath: _dialogueOptions.Array.data[1]
+      value: 
+      objectReference: {fileID: 4716781923744822639}
     - target: {fileID: 3018138356365578023, guid: a1f4653602bc51f4eba2d1326001db4f, type: 3}
       propertyPath: m_Name
       value: DoALotInMySpareTime

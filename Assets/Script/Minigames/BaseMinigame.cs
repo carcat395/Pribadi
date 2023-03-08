@@ -74,7 +74,7 @@ public class BaseMinigame : MonoBehaviour
         inCutscene = true;
         if(_timelineEnds[index] != null)
             _timelineEnds[index].Play();
-        double delay = _timelineEnds[index]? (Mathf.Round((float)_timelineEnds[index].playableAsset.duration * 100f) / 100f) * 1000 : 0;
+        double delay = _timelineEnds[index]? ((Mathf.Round(((float)_timelineEnds[index].playableAsset.duration * 3/4) * 100f) / 100f) * 1000) : 0;
 
         await UniTask.Delay((int)delay);
 

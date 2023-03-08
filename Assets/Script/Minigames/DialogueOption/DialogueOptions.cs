@@ -11,7 +11,7 @@ public class DialogueOptions : BaseMinigame
     {
         _onTimerFinished += () =>
         {
-            FinishMinigame();
+            UpdatePoint(1);
         };
         
         foreach(Button option in _dialogueOptions)

@@ -33,12 +33,16 @@ public class ResultScreen : MonoBehaviour
         {
             _view.scoreSliders[i].value = scores[i];
             _view.scoreSliders[i].GetComponentInChildren<TMP_Text>().text = new string(scores[i] + " / 20");
+            
+            Debug.Log(scores[i]);
+            Debug.Log(20 * 1/3 + " " + 20 * 2/3);
+            Debug.Log(i.ToString() + " - " + content[i.ToString()]);
 
             if(scores[i] < 20 * 1/3)
             {
                 _view.resultDescriptions[i].text = content[i.ToString()] + content[new string(i + "_Low")];
             }
-            else if(scores[i] > 20 * 1/3 && scores[i] < 20 * 2/3)
+            else if(scores[i] >= 20 * 1/3 && scores[i] <= 20 * 2/3)
             {
                 _view.resultDescriptions[i].text = content[i.ToString()] + content[new string(i + "_Mid")];
             }
@@ -58,7 +62,7 @@ public class ResultScreen : MonoBehaviour
         {
             _view.resultDescriptions[0].text = content["0"] + content[new string(0 + "_Low")];
         }
-        else if(scores[0] > GameManager.instance.globalExtraversionAverage * 0.75f && scores[0] < GameManager.instance.globalExtraversionAverage * 1.25f)
+        else if(scores[0] >= GameManager.instance.globalExtraversionAverage * 0.75f && scores[0] <= GameManager.instance.globalExtraversionAverage * 1.25f)
         {
             _view.resultDescriptions[0].text = content["0"] + content[new string(0 + "_Mid")];
         }
