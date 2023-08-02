@@ -53,9 +53,10 @@ public class GameManager : MonoBehaviour
     public Action<int[], Dictionary<string, int>> onShowResult;
 
     //transition
-    public Action<bool,float> onStartTransition;
+    public Action<bool, float> onStartTransition;
     public Action onTransitionFinish;
     public Action<string, string> onUpdateTransitionText;
+    public Action<string> onLoadedMinigame;
     public float fadeDuration = 1;
 
     private void Awake()
@@ -167,7 +168,7 @@ public class GameManager : MonoBehaviour
                 onTransitionFinish = null;
                 _currMinigame.onStartMinigame?.Invoke();
             };
-            onStartTransition.Invoke(true, fadeDuration);
+            onLoadedMinigame?.Invoke(_currMinigame.name);
         };
         onUpdateTransitionText.Invoke(_currMinigame.minigameStyle, _currMinigame.minigameDescription);
     }

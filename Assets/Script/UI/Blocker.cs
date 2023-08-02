@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Cysharp.Threading.Tasks;
+using Newtonsoft.Json;
 using TMPro;
 
 [RequireComponent(typeof(Image))]
@@ -10,7 +11,14 @@ public class Blocker : MonoBehaviour
 {
     [Header("Duration of text on screen before continuing fade (in ms)")]
     [SerializeField] private int _inbetweenTextDuration;
+    [SerializeField] private Button _closeBlockerButton;
+    [SerializeField] private TMP_Text _minigameDescription;
     private Transform _blockerContent;
+
+    
+    private Dictionary<string, string> _minigameDescriptions = new Dictionary<string, string>();
+    private string _filePath = "Minigame_Descriptions";
+
 
     private void Start()
     {
@@ -18,6 +26,17 @@ public class Blocker : MonoBehaviour
         GameManager.instance.onStartTransition += Fade;
         GameManager.instance.onUpdateTransitionText += UpdateText;
         gameObject.SetActive(false);
+        _minigameDescriptions = GetTextContent(_filePath);
+        _closeBlockerButton.onClick.AddListener(() => 
+        {
+            _closeBlockerButton.interactable = false;
+            GameManager.instance.onStartTransition.Invoke(true, GameManager.instance.fadeDuration);
+        });
+        GameManager.instance.onLoadedMinigame += (string minigameName) =>
+        {
+            UpdateMinigameDescription(minigameName);
+            _closeBlockerButton.interactable = true;
+        };
     }
 
     private async void Fade(bool fadeIn, float _fadeDuration)
@@ -27,6 +46,7 @@ public class Blocker : MonoBehaviour
 
         if(fadeIn)
         {
+        Debug.Log("fade");
             // while(image.color.a > 0)
             // {
             //     Debug.Log(image.color.a );
@@ -36,6 +56,7 @@ public class Blocker : MonoBehaviour
 
             //     await UniTask.Delay(10);
             // }
+            transform.GetChild(0).gameObject.SetActive(false);
 
             while (timeElapsed < _fadeDuration)
             {
@@ -52,6 +73,7 @@ public class Blocker : MonoBehaviour
         }
         else
         {
+        Debug.Log("fade");
             gameObject.SetActive(true);
 
             // while(image.color.a < 1)
@@ -77,6 +99,7 @@ public class Blocker : MonoBehaviour
             }
         }
         
+        //transform.GetChild(0).gameObject.SetActive(true);
         GameManager.instance.onTransitionFinish?.Invoke();
     }
 
@@ -88,9 +111,21 @@ public class Blocker : MonoBehaviour
         texts[1].text = content;
         Debug.Log("transition delay: " + _inbetweenTextDuration);
 
-        await UniTask.Delay(_inbetweenTextDuration);
+        await UniTask.Delay(0);
         
-        _blockerContent.gameObject.SetActive(false);
+        //_blockerContent.gameObject.SetActive(false);
         GameManager.instance.onTransitionFinish?.Invoke();
+    }
+
+    private Dictionary<string, string> GetTextContent(string path)
+    {
+        TextAsset targetFile = Resources.Load<TextAsset>(path);
+        return JsonConvert.DeserializeObject<Dictionary<string, string>>(targetFile.text);
+    }
+
+    private void UpdateMinigameDescription(string minigameName)
+    {
+        Debug.Log(minigameName);
+        _minigameDescription.text = _minigameDescriptions[minigameName];
     }
 }

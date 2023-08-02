@@ -798,7 +798,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3339147014351993360, guid: 49baaff46fdeacc4e80acf2b461be233, type: 3}
       propertyPath: m_InitialState
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3339147014351993360, guid: 49baaff46fdeacc4e80acf2b461be233, type: 3}
       propertyPath: m_PlayableAsset

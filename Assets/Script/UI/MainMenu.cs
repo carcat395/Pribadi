@@ -51,6 +51,8 @@ public class MainMenu : MonoBehaviour
         {
             if(!_view.continueButton.gameObject.activeSelf)
                 _view.continueButton.gameObject.SetActive(true);
+                
+            _view.resultButton.gameObject.SetActive(false);
         };
         GameManager.instance.onShowResult += (int[] result, Dictionary<string, int> itemResults) =>
         {

@@ -35,6 +35,7 @@ public class BaseMinigame : MonoBehaviour
     [SerializeField] private PlayableDirector _timelineStart = null;
     [SerializeField] private PlayableDirector[] _timelineEnds;
     [SerializeField] private Animator _minigameObjectsAnim = null;
+    [SerializeField] private Image _blocker;
 
     public bool inCutscene {get; set;}
 
@@ -51,8 +52,9 @@ public class BaseMinigame : MonoBehaviour
         inCutscene = true;
         Debug.Log(_timelineStart.playableAsset.duration);
         float delay = _timelineStart? (Mathf.Round((float)_timelineStart.playableAsset.duration * 100f) / 100f) * 1000: 0;
+        _blocker.gameObject.SetActive(false);
         if(_timelineStart != null)
-            //_timelineStart.Play();
+            _timelineStart.Play();
 
         await UniTask.Delay((int)delay);
 
